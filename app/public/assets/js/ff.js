@@ -47,13 +47,14 @@ $(document).ready(function () {
             $.post("/api/friends", userData, function (data) {
 
                 console.log("data", data);
+                console.log(data.closestMatch.name);
                 console.log(data.closestMatch.photo);
                 console.log("data.compatability", data.compatibility);
                
                 // Get the modal
                 var modal = document.getElementById('myModal');
                 $("#match-name").text(data.closestMatch.name);
-                $("#match-img").attr("src", data.closestMatch.photo);
+                $("#match-image").attr("src", data.closestMatch.photo);
                 
                 modal.style.display = "block";
 
