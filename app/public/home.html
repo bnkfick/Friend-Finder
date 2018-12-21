@@ -2,48 +2,39 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Friend Finder</title>
 
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--  Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  </style>
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-
-  <!-- Font Awesome Glyphicons -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
 </head>
 
 <body>
-  <div class="title">
-    <h1>Friend Finder</h1>
-  </div>
-  <div>
-    <h2></h2>
-  </div>
-  <div class="content-wrapper">
+  <div class="container text-center">
+    <div id="content">
+      <h1>Friend Finder</h1>
 
-    <div>
-      <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
-      <hr>
-      <h2>Answer a few basic questions. </h2>
-      <h2>Then find the Friend with the greatest compatibility!</h2>
-      <br>
+      <h4>Answer a few questions to find a friend with the greatest compatibility.</h4>
 
-      <div>
-        <a href="/survey"><button type="button">
-            <h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4>
-          </button></a>
-      </div>
-
+      <a href="/survey" id="survey-btn">Start Survey</a>
     </div>
 
-
-  </div>
-  <div class="links">
+    <div class="links">
       <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/bnkfick/Friend-Finder">GitHub Repo</a></p>
     </div>
+
+  </div>
+
 
 </body>
 

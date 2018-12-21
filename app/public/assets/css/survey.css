@@ -1,0 +1,137 @@
+h1 {
+  margin-top: 60px;
+  color:  #0F224E;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #888;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+label[for='name'],
+label[for='photo']
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #0F224E;
+}
+
+#submit {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Open Sans', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 2px solid #0F224E;
+  text-decoration: none;
+  color: #0F224E;
+}
+
+#submit:hover {
+    -moz-box-shadow: 1px 1px 1px #888888;
+    -webkit-box-shadow: 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+#match-name {
+    font-size: 24px;
+}
+#match-image {
+    max-width: 300px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    cursor:default;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px;
+    border:1px solid #0F224E;
+    background-color:whitesmoke;
+    background-color: rgba(255, 255, 255, 0.85); /* Black w/opacity/see-through */
+    /*text-shadow: 1px 1px 1px black;*/
+    /*box-shadow: -2px -1px 1px #eee;*/
+    border-radius:5px;
+    border: 1px solid darkslategray;
+    -moz-box-shadow: 1px 1px 1px #888888;
+    -webkit-box-shadow: 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px #888888;
+}
+.modal-title { 
+    font-weight:bold;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px #888888;
+    text-align:left;
+    color:  #0F224E;
+}
+.modal-header {
+    border-bottom: 1px solid #aaa;
+
+}
+.modal-body {
+    height: 300px;
+}
+#matchModal button {
+    width: 100px;
+    float:right;
+    border-radius: 5px;
+    margin-top:30px;
+}
+.modal-footer {
+    border-top: 1px solid #aaa;
+    height: 100px;
+    vertical-align: bottom;
+}
+/* The Close x */
+#close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+#close:hover,
+#close:focus {
+    color: #000;
+    text-decoration: none;
+
+}
+

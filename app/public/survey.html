@@ -1,139 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Friend Finder Survey</title>
-  <meta name="description" content="A compatibility-based FriendFinder Application">
-  <meta name="Barbara Fick" content="Friend Finder Survey">
+  <meta charset="utf-8">
+  <title>Friend Finder</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--  Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/survey.css"></style>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
-
-
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
-
-      <br>
-
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Survey Questions</h1>
+        <hr></hr>
+        <h5>About You</h5>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" id="name">
+          </div>
+          <div class="form-group">
+            <label for="photo">Link to Photo Image</label>
+            <input class="form-control" type="text" id="photo">
+          </div>
+        </form>
+    
+        <form>
+          <div class="form-group">
+            <label for="question-1">
+              <h5>Question 1</h5>
+              <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            </label>
+            <select data-placeholder="" class="form-control" id="q1">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-2">
+              <h5>Question 2</h5>
+              <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q2">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-3">
+              <h5>Question 3</h5>
+              <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q3">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-4">
+              <h5>Question 4</h5>
+              <h4>You rarely do something just out of sheer curiosity.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q4">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-5">
+              <h5>Question 5</h5>
+              <h4>People can rarely upset you.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q5">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-6">
+              <h5>Question 6</h5>
+              <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q6">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-7">
+              <h5>Question 7</h5>
+              <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q7">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-8">
+              <h5>Question 8</h5>
+              <h4>You rarely get carried away by fantasies and ideas.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q8">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-9">
+              <h5>Question 9</h5>
+              <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q9">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="question-10">
+              <h5>Question 10</h5>
+              <h4>You feel more energetic after spending time with a group of people.</h4>
+            </label>
+            <select data-placeholder class="form-control" id="q10">
+              <option value="" selected disabled>Select an Option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+        
+      </div>
     </div>
-
-    <h3><strong>Question 1</strong></h3>
-    <h4>Why do you catch a cold?</h4>
-    <select class="chosen-select" id="q1">
-      <option value=""></option>
-      <option value="1">You were around the wrong people</option>
-      <option value="2">I look amazing even when I'm sick</option>
-      <option value="3">A Magic Spell</option>
-      <option value="4">From the Cleaning Lady</option>
-      <option value="5">You don't catch colds</option>
-    </select>
-
-    <h3><strong>Question 2</strong></h3>
-    <h4>If you discovered your best friend’s boyfriend or husband was cheating on her, would you let her know?</h4>
-    <select class="chosen-select" id="q2">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-    <h3><strong>Question 3</strong></h3>
-    <h4>What color is the sound of a flute?</h4>
-    <select class="chosen-select" id="q3">
-      <option value=""></option>
-      <option value="1">Yellow</option>
-      <option value="2">Magenta</option>
-      <option value="3">Blue</option>
-      <option value="4">Green</option>
-      <option value="5">Orange</option>
-    </select>
-    <h3><strong>Question 4</strong></h3>
-    <h4>What is your favorite kind of weather?</h4>
-    <select class="chosen-select" id="q4">
-      <option value=""></option>
-      <option value="1">Hot and Steamy</option>
-      <option value="2">Dark</option>
-      <option value="3">Air-conditioned with a Martini</option>
-      <option value="4">Thunderstorms</option>
-      <option value="5">Snow</option>
-    </select>
-
-    <h3><strong>Question 5</strong></h3>
-    <h4>Are you afraid of spiders.</h4>
-    <select class="chosen-select" id="q5">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-    <h3><strong>Question 6</strong></h3>
-    <h4>Close your eyes and imagine a baby. Is it</h4>
-    <select class="chosen-select" id="q6">
-      <option value=""></option>
-      <option value="1">Crying</option>
-      <option value="2">Sleeping</option>
-      <option value="3">Smiling</option>
-      <option value="4">Crawling</option>
-      <option value="5">Drinking a Bottle</option>
-    </select>
-    <h3><strong>Question 7</strong></h3>
-    <h4>Is more logical than emotional</h4>
-    <select class="chosen-select" id="q7">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-    <h3><strong>Question 8</strong></h3>
-    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-    <select class="chosen-select" id="q8">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-    <h3><strong>Question 9</strong></h3>
-    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-    <select class="chosen-select" id="q9">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-    <h3><strong>Question 10</strong></h3>
-    <h4>Is the glass half full or half empty.</h4>
-    <select class="chosen-select" id="q10">
-      <option value=""></option>
-      <option value="1">Half-full</option>
-      <option value="2">Half-empty</option>
-      <option value="3">It's just a glass of water</option>
-      <option value="4">I'm confused</option>
-      <option value="5">Piss Off</option>
-    </select>
-
-
-    <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
-        aria-hidden="true"></i>
-      Submit</button>
-
   </div>
 
 
@@ -147,7 +198,7 @@
         <div id="close" class="close">&times;</div>
         <h3 class="modal-title">
           <strong>Best Match</strong>
-        </h2>
+          </h2>
       </div>
       <div class="modal-body">
         <h4 id="match-name">Chris Hemsworth</h4>
