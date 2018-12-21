@@ -7,7 +7,7 @@ module.exports = function (app) {
     // A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
     app.get("/api/friends", function (req, res) {
         console.log("app.get('/api/friends')");
-        res.send("app.get('/api/friends')")
+        res.json(friends);
     });
 
     // A POST routes /api/friends. This will be used to handle incoming survey results. 
@@ -24,7 +24,7 @@ module.exports = function (app) {
          // loop through all of the friends
         for (var x=0; x<friends.length; x++) {
             console.log(friends[x].name);
-            totalDifference = 0;
+            var totalDifference = 0;
             //now calculate the compatability score or totalDifference between 
             //the friend scores and the users scores
             //The less difference, the more compatible

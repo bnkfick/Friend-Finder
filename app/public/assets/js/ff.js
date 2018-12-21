@@ -52,7 +52,7 @@ $(document).ready(function () {
                 console.log("data.compatability", data.compatibility);
                
                 // Get the modal
-                var modal = document.getElementById('myModal');
+                var modal = document.getElementById('matchModal');
                 $("#match-name").text(data.closestMatch.name);
                 $("#match-image").attr("src", data.closestMatch.photo);
                 
@@ -64,10 +64,8 @@ $(document).ready(function () {
         }
     });
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == document.getElementById('close')) {
-            document.getElementById('myModal').style.display = "none";
-        }
-    }
-
+   
+    $(".close").on("click", function () {
+        document.getElementById('matchModal').style.display = "none";
+      });
 });
