@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    console.log("successfully using ff.js");
 
     // Capture the form inputs
     $("#submit").on("click", function (event) {
@@ -42,14 +41,9 @@ $(document).ready(function () {
                     $("#q10").val()
                 ]
             };
-            console.log(userData);
+
             // AJAX post the data to the friends API.
             $.post("/api/friends", userData, function (data) {
-
-                console.log("data", data);
-                console.log(data.closestMatch.name);
-                console.log(data.closestMatch.photo);
-                console.log("data.compatability", data.compatibility);
                
                 // Get the modal
                 var modal = document.getElementById('matchModal');

@@ -58,11 +58,13 @@ h5 {
     font-size: 24px;
 }
 #match-image {
-    max-width: 300px;
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
 }
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
