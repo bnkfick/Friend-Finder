@@ -31,40 +31,23 @@ h5 {
   color: #0F224E;
 }
 
-#submit {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-family: 'Open Sans', sans-serif !important;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 2px;
-  border: 2px solid #0F224E;
-  text-decoration: none;
-  color: #0F224E;
-}
 
-#submit:hover {
-    -moz-box-shadow: 1px 1px 1px #888888;
-    -webkit-box-shadow: 1px 1px 1px #888888;
-    box-shadow: 1px 1px 1px #888888;
-}
 
+.modal-body {
+    text-align: center;
+}
 #match-name {
     font-size: 24px;
 }
 #match-image {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #0F224E;
 }
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -88,8 +71,6 @@ h5 {
     border:1px solid #0F224E;
     background-color:whitesmoke;
     background-color: rgba(255, 255, 255, 0.85); /* Black w/opacity/see-through */
-    /*text-shadow: 1px 1px 1px black;*/
-    /*box-shadow: -2px -1px 1px #eee;*/
     border-radius:5px;
     border: 1px solid darkslategray;
     -moz-box-shadow: 1px 1px 1px #888888;
@@ -107,17 +88,29 @@ h5 {
     border-bottom: 1px solid #aaa;
 
 }
-.modal-body {
-    height: 300px;
-}
+
+
 #matchModal button {
-    width: 100px;
-    float:right;
-    border-radius: 5px;
-    margin-top:30px;
-}
+    padding-top: 13px;
+    padding-bottom: 11px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 2px solid #0F224E;;
+    text-decoration: none;
+    color: #0F224E;
+  }
+  
+#matchModal button:hover {
+    background-color: #0F224E;;
+    color: #FFF;
+  }
+
 .modal-footer {
-    border-top: 1px solid #aaa;
     height: 100px;
     vertical-align: bottom;
 }
@@ -136,4 +129,3 @@ h5 {
     text-decoration: none;
 
 }
-

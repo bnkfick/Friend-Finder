@@ -62,4 +62,7 @@ $(document).ready(function () {
     $(".close").on("click", function () {
         document.getElementById('matchModal').style.display = "none";
       });
+      $(".closeBtn").on("click", function () {
+        document.getElementById('matchModal').style.display = "none";
+      });
 });
