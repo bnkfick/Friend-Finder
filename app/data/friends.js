@@ -1,7 +1,7 @@
 var friends = [
     {
         "name": "Avery Goodman",
-        "photo": "/assets/images/male-photographer.jpg",
+        "photo": "/assets/images/photographer-man.jpg",
         "scores": [
              3,
              3,
@@ -33,7 +33,7 @@ var friends = [
    },
    {
         "name": "Edina Clouds",
-        "photo": "/assets/images/anna-beret.jpg",
+        "photo": "/assets/images/edina-beret.jpg",
         "scores": [
              5,
              5,
@@ -64,7 +64,7 @@ var friends = [
         ]
    },
    {  
-        "name": "Zach Solo",
+        "name": "Zach Safoney",
         "photo": "/assets/images/sax-man.jpg",
         "scores": [
              5,
@@ -80,7 +80,7 @@ var friends = [
         ]
    },
    {
-        "name": "Juana Dance",
+        "name": "Joanna Dance",
         "photo": "/assets/images/dancer.jpg",
         "scores": [
              2,
@@ -113,7 +113,7 @@ var friends = [
    },
    {
         "name": "Arty Fischel",
-        "photo": "/assets/images/artlover.jpg",
+        "photo": "/assets/images/artlover-man.jpg",
         "scores": [
              5,
              5,
@@ -145,7 +145,7 @@ var friends = [
    },
    {
         "name": "Fleur Tayschuss",
-        "photo": "assets/image/likes-lavender.jpg",
+        "photo": "assets/images/likes-lavender.jpg",
         "scores": [
              5,
              5,
@@ -161,7 +161,7 @@ var friends = [
    },
    {
         "name": "Iman Dewatter",
-        "photo": "/assets/images/scuba.jpg",
+        "photo": "/assets/images/scubadiver.jpg",
         "scores": [
              2,
              1,
@@ -176,7 +176,7 @@ var friends = [
         ]
    },
    { 
-        "name": "Anna Malluva",
+        "name": "Anna Maluver",
         "photo": "assets/images/likes-dogs-woman.jpg",
         "scores": [
              3,

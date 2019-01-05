@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Friend Finder</title>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Bootstrap CDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!--  Custom Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/survey.css"></style>
+  <!--  Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/survey.css">
+  </style>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <!-- Chosen -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
+
 <body>
+
   <div class="container">
+      <div class="jumbotron"">
+          <h2>Face it.  You need a friend.  Let's Find One!</h2>
+          <h1>Answer Our Survey Questions</h1>
+      </div>
     <div class="row">
       <div class="col-md-12">
-        <h1>Survey Questions</h1>
-        <hr></hr>
+
         <h5>About You</h5>
         <form>
           <div class="form-group">
@@ -38,7 +41,7 @@
             <input class="form-control" type="text" id="photo">
           </div>
         </form>
-    
+
         <form>
           <div class="form-group">
             <label for="question-1">
@@ -155,7 +158,8 @@
           <div class="form-group">
             <label for="question-9">
               <h5>Question 9</h5>
-              <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+              <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts
+                or not.</h4>
             </label>
             <select data-placeholder class="form-control" id="q9">
               <option value="" selected disabled>Select an Option</option>
@@ -180,40 +184,41 @@
               <option value="5">5 (Strongly Agree)</option>
             </select>
           </div>
-          <button type="submit" id="submit">Submit</button>
+          <button type="submit" id="submit-btn">Submit</button>
         </form>
-        
+
       </div>
     </div>
   </div>
 
 
-  <!-- The Modal -->
-  <div id="matchModal" class="modal">
+  <!---------------- The Modal ------------------>
 
-    <!-- Modal content -->
-    <div class="modal-content">
 
-      <div class="modal-header">
-        <div id="close" class="close">&times;</div>
-        <h3 class="modal-title">
-          <strong>Best Match</strong>
-          </h2>
-      </div>
-      <div class="modal-body">
-        <h4 id="match-name">Chris Hemsworth</h4>
-        <img src="https://www.trendrr.net/wp-content/uploads/2017/06/Chris-Hemsworth-Top-Most-Famous-Hottest-Famous-Male-Actors-In-The-World-2018.jpg"
-          id="match-image">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="closeBtn">
-          <h4>Close</h4>
-        </button>
-      </div>
+  <!----------------------------------------------->
 
+  <!-- Modal -->
+  <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <h4 id="match-name">Chris Hemsworth</h4>
+              <img src="https://www.trendrr.net/wp-content/uploads/2017/06/Chris-Hemsworth-Top-Most-Famous-Hottest-Famous-Male-Actors-In-The-World-2018.jpg"
+                id="match-image">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn closBtn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
   <script src="assets/js/ff.js"></script>
 </body>
 

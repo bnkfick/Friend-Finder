@@ -21,7 +21,7 @@ module.exports = function (app) {
         var userData = req.body;
         var userScores = userData.scores;
          //-- loop through all of the friends --//
-        for (var x=0; x<friends.length; x++) {
+        for (var x=0; x < friends.length; x++) {
 
             var totalDifference = 0;
             //-- now calculate the oppositesScore which is  --//

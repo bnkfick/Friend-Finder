@@ -31,8 +31,32 @@ h5 {
   color: #0F224E;
 }
 
+.jumbotron {
+    background-image: url("/assets/images/mtns.jpg");
+    background-size: cover;
 
+    background-color: rgba(255, 255, 255, 0.85); /* Black w/opacity/see-through */
+}
 
+#submit-btn {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 2px solid #0F224E;;
+    text-decoration: none;
+    color: #0F224E;
+}
+  
+#submit-btn:hover {
+    background-color: #0F224E;;
+    color: #FFF;
+}
 .modal-body {
     text-align: center;
 }
@@ -47,7 +71,7 @@ h5 {
 }
 /* The Modal (background) */
 .modal {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -62,7 +86,7 @@ h5 {
 
 /* Modal Content */
 .modal-content {
-    cursor:default;
+    cursor: default;
     background-color: #fefefe;
     margin: auto;
     padding: 20px;

@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     // Capture the form inputs
-    $("#submit").on("click", function (event) {
+    $("#submit-btn").on("click", function (event) {
         event.preventDefault();
 
         // Form validation
