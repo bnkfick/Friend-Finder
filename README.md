@@ -14,6 +14,13 @@ https://salty-castle-84067.herokuapp.com/
 
 ![Friend Finder Survey Page](FriendFinder-Survey.png)
 
+## See All Friends
+- The user can link to a view of all friends via the homepage.
+
+![Friend Finder All Friends 1](FriendFinder-AllFriends1.png)
+![Friend Finder All Friends 2](FriendFinder-AllFriends2.png)
+![Friend Finder All Friends 3 ](FriendFinder-AllFriends3.png)
+
 ## Technologies Used
 - Node.js
 - express NPM Package https://www.npmjs.com/package/express
