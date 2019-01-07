@@ -5,7 +5,7 @@ https://salty-castle-84067.herokuapp.com/
 ---
 ## A Few Sample Name/Photo examples to try if you visit the live site
 
-- Levi Tate          &mdash;   https://unsplash.com/photos/fKTKVrNqXQQ
+- Levi Tate          &mdash;   https://images.unsplash.com/photo-1461800919507-79b16743b257
 - Constance Noring   &mdash;   https://images.unsplash.com/photo-1499552442814-13341b4aed72
 - Chad Terbachs      &mdash;   https://images.unsplash.com/photo-1542327897-4141b355e20e
 - Jean Yuss          &mdash;   https://images.unsplash.com/photo-1515073838964-4d4d56a58b21
